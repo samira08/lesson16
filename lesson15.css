@@ -1,0 +1,119 @@
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    transition: all 1s;
+}
+.links > a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 16px;
+    color: grey;
+}
+.links > a:hover{
+    text-decoration: underline;
+
+    transition: 1s;
+}
+nav > h1{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Iter -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: flex-end;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(199, 7, 87);
+    color: white;
+    font-family:sans-serif;
+    border-radius: 4px;
+    font-weight: 800;
+}
+button:hover{
+    background-color: rgb(117, 4, 51);
+    transition: all 1s;
+}
+.square{
+    width: 45px;
+    height: 45px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 1s;
+}
+.square > span{
+    margin-bottom: -2px;
+}
+.container{
+    margin-top: 150px;
+    margin-left: 20%;
+    margin-right: 5%;
+    width: 75%;
+    min-height: 750px;
+    display: flex;
+    transition: all 1s;
+}
+.burger{
+    display: none;
+}
+.burger > div{
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    background-color: black;
+}
+.info{
+   width: 500px;
+   height: 400px;
+   padding-right: 5%;
+}
+.grey-block{
+    z-index: -1;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    background-color: rgba(221, 219, 219, 0.445);
+}
+.big-parag, .info > h1{
+    font-size: 35px;
+}
+.btn{
+    margin-top: 20px;
+}
+.picture{
+    background-image: url("img/photo-94.jpg");
+    width: 50%;
+    height: 750px;
+    background-size: cover;
+    margin-top: 50px;
+}
+@media(max-width:1000px){
+    .links{
+        display: none;
+    }
+    .burger{
+        display: inline;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .info{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    .picture{
+        width: 100%;
+    }
+}
